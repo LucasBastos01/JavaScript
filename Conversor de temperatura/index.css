@@ -1,0 +1,40 @@
+body {
+    background-image: radial-gradient(circle at 50% -20.71%, #ff57d2 0, #ff4edb 12.5%, #f046e3 25%, #d63feb 37.5%, #b53cf2 50%, #8c3df9 62.5%, #4f40ff 75%, #0046ff 87.5%, #004bff 100%);
+    background-size: 1000% 1000%;
+    min-height: 90vh;
+    animation: gradient 15s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.fundoPrincipal {
+    background-color: white;
+    padding: 5%;
+    border-radius: 10px;
+    min-height: 50vh;
+    margin: 3%;
+}
+
+@media screen and (max-width: 991px) {
+    button{
+        width: 100%;
+    }
+    .celsius {
+        margin-bottom: 3vh;
+    }
+}
